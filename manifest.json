@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Teletalk Form Fill",
+  "version": "1.0.0",
+  "description": "Save and auto-fill Teletalk job forms. Data stays on your device. Not affiliated with Teletalk or the Government of Bangladesh.",
+  "permissions": ["storage"],
+  "host_permissions": ["*://*.teletalk.com.bd/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["*://*.teletalk.com.bd/*"],
+      "js": ["lib/match.js", "lib/fill.js", "lib/capture.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
