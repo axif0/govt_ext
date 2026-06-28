@@ -5,7 +5,8 @@ Free Chrome extension — save Teletalk job form once, **Auto Fill** on any `*.t
 ## Install
 
 1. Chrome → `chrome://extensions` → **Developer mode** ON
-2. **Load unpacked** → select this folder
+2. Clone or download the repo
+3. **Load unpacked** → select this folder
 
 ## Use
 
